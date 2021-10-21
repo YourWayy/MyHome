@@ -1,0 +1,150 @@
+.main {
+  position: relative;
+  width: 100%;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__profession {
+    display: block;
+  }
+
+  &__particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__container {
+    padding: 100px 0 10px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__wrapper-conteiner {
+    z-index: 99;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #171717c2;
+    min-height: 580px;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  &__profession {
+    display: inline-block;
+    font-size: 16px;
+    color: #bbb;
+    font-weight: 700;
+  }
+
+  &__wrapper {
+    border: 1px solid;
+    height: 570px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__left {
+      max-height: 570px;
+      width: 480px;
+    }
+
+    &__right {
+      width: 480px;
+      display: flex;
+      align-items: center;
+      margin: 0 0 40px;
+
+      &-inner {
+        width: 100%;
+        color: #ffff;
+        font-weight: 800;
+      }
+    }
+  }
+
+  &__name {
+    font-family: 'Archivo Black';
+    display: block;
+    font-size: 70px;
+    color: #171717;
+    text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, #fff -1px 1px 0, #fff 1px -1px 0;
+    line-height: 80px;
+  }
+
+  &__surname {
+    font-family: 'Archivo Black';
+    display: block;
+    font-size: 70px;
+  }
+
+  &__photo {
+    background-size: cover;
+    height: 570px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1239px) {
+  .main {
+    &__container {
+      margin: 50px 0 10px;
+    }
+    &__profession {
+      margin: 20px 0 10px 0;
+    }
+
+    &__wrapper {
+      &__left {
+        margin: 0 0 0px;
+      }
+      &__right {
+        margin: 0 0 10px 0;
+      }
+    }
+    &__photo {
+      height: 570px;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    &__container {
+      padding: 50px 0 10px;
+    }
+    min-height: 100vh;
+    &__name {
+      font-size: 40px;
+    }
+
+    &__surname {
+      font-size: 40px;
+    }
+
+    &__wrapper {
+      &__left {
+        max-height: 50vh;
+        width: 480px;
+        margin: 0;
+      }
+
+      &__right {
+        margin: 0;
+      }
+    }
+    &__photo {
+      max-height: 50vh;
+    }
+  }
+}
