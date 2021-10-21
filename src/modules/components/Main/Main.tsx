@@ -8,6 +8,8 @@ import Particles from 'react-particles-js';
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt';
+import StarfieldAnimation from 'react-starfield-animation';
+import BigBangStarField from 'react-big-bang-star-field';
 
 let ParticleParamsDots = {
   particles: {
@@ -36,8 +38,26 @@ export default function Main() {
   return (
     <div className="main">
       <div className="container main__container">
-        <Particles className="main__particles" params={ParticleParamsDots} />
-        <Particles className="main__particles" params={ParticleParamsLines} />
+        <StarfieldAnimation
+          style={{
+            position: 'absolute',
+            width: '100%',
+            height: '90vh',
+          }}
+        />
+        {/* <BigBangStarField
+          numStars={666}
+          maxStarSpeed={0.1}
+          scale={4}
+          style={{
+            position: 'absolute',
+            width: '100%',
+            height: '90vh',
+          }}
+          starColor={'202, 215, 255'}
+        /> */}
+        {/* <Particles className="main__particles" params={ParticleParamsDots} />
+        <Particles className="main__particles" params={ParticleParamsLines} /> */}
         <Fade top>
           <div className="main__wrapper-conteiner">
             <div className="main__wrapper__right">

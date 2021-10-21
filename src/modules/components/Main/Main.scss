@@ -1,10 +1,11 @@
 .main {
   position: relative;
   width: 100%;
-  background-color: #101010;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url('../../common/image/space2.jpg'), no-repeat;
+
   &__profession {
     display: block;
   }
@@ -23,6 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
   }
 
   &__wrapper-conteiner {
@@ -31,7 +33,10 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    background-color: #171717c2;
+    background: #141e309d;
+    background: -webkit-linear-gradient(to right, #243b55dc, #141e30d3);
+    background: linear-gradient(to right, #243b55dc, #141e30d3);
+
     min-height: 580px;
     width: 100%;
     padding: 0 10px;

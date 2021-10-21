@@ -1,7 +1,9 @@
 .header {
   z-index: 999;
   height: 80px;
-  background-color: #171717;
+  background: #141e309d;
+  background: -webkit-linear-gradient(to right, #243b55dc, #141e30d3);
+  background: linear-gradient(to right, #243b55dc, #141e30d3);
   display: flex;
   align-items: center;
   justify-content: center;
