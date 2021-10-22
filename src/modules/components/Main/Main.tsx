@@ -45,6 +45,7 @@ export default function Main() {
             height: '90vh',
           }}
         />
+
         <Fade top>
           <div className="main__wrapper-conteiner">
             <div className="main__wrapper__right">
