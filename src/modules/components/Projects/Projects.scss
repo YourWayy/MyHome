@@ -52,7 +52,7 @@
   &__elements {
     display: flex;
     max-width: 370px;
-    background-color: #ffeb77fd;
+    background-color: #0084fffd;
     text-align: center;
     padding: 0 0 123px;
     transition: 1.5s;
@@ -63,9 +63,8 @@
     }
 
     &__title {
-      font-family: 'Open Sans';
       font-size: 25px;
-      font-weight: 400;
+      font-weight: 800;
       letter-spacing: 1.25px;
       margin-bottom: 40px;
     }
@@ -74,7 +73,7 @@
   &__header {
     position: relative;
     padding: 49px 10px 67px;
-    color: #ffeb77fd;
+    color: #fffffffd;
     background-color: #3949ab;
 
     &:before {
@@ -86,8 +85,8 @@
       display: block;
       border: 1px solid;
       border-top-color: transparent;
-      border-right-color: #ffeb77fd;
-      border-bottom-color: #ffeb77fd;
+      border-right-color: #0084fffd;
+      border-bottom-color: #0084fffd;
       border-top-width: 30px;
       border-left-width: 0px;
       border-bottom-width: 1px;
@@ -124,9 +123,10 @@
 
   &__list {
     margin: 36px 0 0;
-    color: #212121;
+    color: rgb(252, 244, 244);
+    font-weight: 900;
     font-family: 'Open Sans';
-    font-size: 17px;
+    font-size: 22px;
     font-weight: 300;
     line-height: 22px;
     letter-spacing: 0.85px;
