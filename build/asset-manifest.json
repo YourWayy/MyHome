@@ -5,11 +5,11 @@
     "main.js.map": "/MyHome/static/js/main.72906962.chunk.js.map",
     "runtime-main.js": "/MyHome/static/js/runtime-main.065a41fd.js",
     "runtime-main.js.map": "/MyHome/static/js/runtime-main.065a41fd.js.map",
-    "static/js/2.92382ec6.chunk.js": "/MyHome/static/js/2.92382ec6.chunk.js",
-    "static/js/2.92382ec6.chunk.js.map": "/MyHome/static/js/2.92382ec6.chunk.js.map",
+    "static/js/2.adb85394.chunk.js": "/MyHome/static/js/2.adb85394.chunk.js",
+    "static/js/2.adb85394.chunk.js.map": "/MyHome/static/js/2.adb85394.chunk.js.map",
     "index.html": "/MyHome/index.html",
     "static/css/main.0109c67f.chunk.css.map": "/MyHome/static/css/main.0109c67f.chunk.css.map",
-    "static/js/2.92382ec6.chunk.js.LICENSE.txt": "/MyHome/static/js/2.92382ec6.chunk.js.LICENSE.txt",
+    "static/js/2.adb85394.chunk.js.LICENSE.txt": "/MyHome/static/js/2.adb85394.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/MyHome/static/media/RobotoCondensed-Bold.ca410272.woff2",
     "static/media/bathman.1c65c08b.jpg": "/MyHome/static/media/bathman.1c65c08b.jpg",
     "static/media/cards.42e700c7.jpg": "/MyHome/static/media/cards.42e700c7.jpg",
@@ -25,7 +25,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.065a41fd.js",
-    "static/js/2.92382ec6.chunk.js",
+    "static/js/2.adb85394.chunk.js",
     "static/css/main.0109c67f.chunk.css",
     "static/js/main.72906962.chunk.js"
   ]
