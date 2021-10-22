@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import './Skills.scss';
 import '../../common/styles/Container.scss';
 import Skill from './Skill/Skill';
@@ -13,21 +13,18 @@ export default function Skills() {
   return (
     <div className="skills">
       <div className="container skills__container">
-        <Slide right>
-          <SectionTitle title={skills.skillTitle} />
-          <div className="skills__list">
-            {skills.skills.map(skill => {
-              return (
-                <Skill
-                  svgIcon={skill.svgIcon}
-                  key={skill.id}
-                  skillDescription={skill.skillDescription}
-                  skillTitle={skill.skillTitle}
-                />
-              );
-            })}
-          </div>
-        </Slide>
+        <SectionTitle title={'About Me'} />
+        <div className="skills__video-wrapper">
+          <iframe
+            width="820"
+            height="520"
+            src="https://www.youtube.com/embed/CGJ8OLK2dao"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     </div>
   );

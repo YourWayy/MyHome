@@ -15,7 +15,7 @@ export default function Nav() {
       >
         Main
       </Link>
-      {/* <Link
+      <Link
         activeClass="active"
         to="skills"
         className="nav__link"
@@ -23,7 +23,7 @@ export default function Nav() {
         smooth={true}
         duration={500}
       >
-        Skills
+        AboutMe
       </Link>
       <Link
         activeClass="active"
@@ -33,8 +33,8 @@ export default function Nav() {
         smooth={true}
         duration={500}
       >
-        Projects
-      </Link> */}
+        Price
+      </Link>
       <Link
         activeClass="active"
         to="contacts"

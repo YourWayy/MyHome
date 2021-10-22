@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/MyHome/static/css/main.fce91c2a.chunk.css",
+    "main.js": "/MyHome/static/js/main.4f9452af.chunk.js",
+    "main.js.map": "/MyHome/static/js/main.4f9452af.chunk.js.map",
+    "runtime-main.js": "/MyHome/static/js/runtime-main.065a41fd.js",
+    "runtime-main.js.map": "/MyHome/static/js/runtime-main.065a41fd.js.map",
+    "static/js/2.585301ee.chunk.js": "/MyHome/static/js/2.585301ee.chunk.js",
+    "static/js/2.585301ee.chunk.js.map": "/MyHome/static/js/2.585301ee.chunk.js.map",
+    "index.html": "/MyHome/index.html",
+    "static/css/main.fce91c2a.chunk.css.map": "/MyHome/static/css/main.fce91c2a.chunk.css.map",
+    "static/js/2.585301ee.chunk.js.LICENSE.txt": "/MyHome/static/js/2.585301ee.chunk.js.LICENSE.txt",
+    "static/media/fonts.scss": "/MyHome/static/media/RobotoCondensed-Bold.ca410272.woff2",
+    "static/media/bathman.1c65c08b.jpg": "/MyHome/static/media/bathman.1c65c08b.jpg",
+    "static/media/cards.42e700c7.jpg": "/MyHome/static/media/cards.42e700c7.jpg",
+    "static/media/development-project.766ea00c.jpg": "/MyHome/static/media/development-project.766ea00c.jpg",
+    "static/media/go-surf.52ddc623.jpg": "/MyHome/static/media/go-surf.52ddc623.jpg",
+    "static/media/konstrukt.6c2107aa.jpg": "/MyHome/static/media/konstrukt.6c2107aa.jpg",
+    "static/media/mario.d41a7b61.jpg": "/MyHome/static/media/mario.d41a7b61.jpg",
+    "static/media/new-yorker.1f2d59bd.jpg": "/MyHome/static/media/new-yorker.1f2d59bd.jpg",
+    "static/media/profile-image.d139c426.jpg": "/MyHome/static/media/profile-image.d139c426.jpg",
+    "static/media/social-network.66258699.jpg": "/MyHome/static/media/social-network.66258699.jpg",
+    "static/media/Main.scss": "/MyHome/static/media/space2.342a55b3.jpg",
+    "static/media/todo-list.2dc55cb0.jpg": "/MyHome/static/media/todo-list.2dc55cb0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.065a41fd.js",
+    "static/js/2.585301ee.chunk.js",
+    "static/css/main.fce91c2a.chunk.css",
+    "static/js/main.4f9452af.chunk.js"
+  ]
+}

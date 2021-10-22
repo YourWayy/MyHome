@@ -10,7 +10,7 @@ export type ProfileType = {
 type ActionType = { type: 'PROFILE/RETURN-PROFILE' };
 
 const initialState: ProfileType = {
-  name: 'I.',
+  name: 'Irma',
   surname: 'Tjandra',
   profession: 'Speaking with Irma',
   image: profileImage,

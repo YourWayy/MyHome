@@ -2,9 +2,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #171717;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
 
+  &__video-wrapper {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   &__container {
+    display: flex;
     flex-direction: column;
     min-height: 100vh;
     padding: 80px 0 0 0;

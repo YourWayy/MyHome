@@ -45,19 +45,6 @@ export default function Main() {
             height: '90vh',
           }}
         />
-        {/* <BigBangStarField
-          numStars={666}
-          maxStarSpeed={0.1}
-          scale={4}
-          style={{
-            position: 'absolute',
-            width: '100%',
-            height: '90vh',
-          }}
-          starColor={'202, 215, 255'}
-        /> */}
-        {/* <Particles className="main__particles" params={ParticleParamsDots} />
-        <Particles className="main__particles" params={ParticleParamsLines} /> */}
         <Fade top>
           <div className="main__wrapper-conteiner">
             <div className="main__wrapper__right">
