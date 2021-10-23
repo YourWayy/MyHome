@@ -35,6 +35,7 @@ let ParticleParamsLines = {
 
 export default function Main() {
   const profile = useSelector<AppRootStateType, ProfileType>(state => state.profile);
+
   return (
     <div className="main">
       <div className="container main__container">

@@ -5,7 +5,6 @@
   background: #141e30;
   background: -webkit-linear-gradient(to right, #243b55, #141e30);
   background: linear-gradient(to right, #243b55, #141e30);
-
   color: #fff;
 
   &__container {
@@ -27,12 +26,9 @@
 
     &__name {
       width: 100%;
-      background: #000000;
-      background: -webkit-linear-gradient(to left, #434343, #000000);
-      background: linear-gradient(to left, #434343, #000000);
-
+      background: #3949ab;
       height: 38px;
-      border: 1px solid #787779;
+      border: 1px solid #f0eef3;
       color: #fff;
       font-weight: 800;
       padding: 0 10px;
@@ -41,12 +37,9 @@
     &__email {
       padding: 0 10px;
       width: 100%;
-      background: #000000;
-      background: -webkit-linear-gradient(to left, #434343, #000000);
-      background: linear-gradient(to left, #434343, #000000);
-
+      background: #3949ab;
       height: 38px;
-      border: 1px solid #797777;
+      border: 1px solid #fff;
       color: #fff;
       font-weight: 800;
       margin: 10px 0;
@@ -55,12 +48,9 @@
     &__text {
       padding: 10px 10px;
       width: 100%;
-      background: #000000;
-      background: -webkit-linear-gradient(to left, #434343, #000000);
-      background: linear-gradient(to left, #434343, #000000);
-
+      background: #3949ab;
       height: 200px;
-      border: 1px solid #797777;
+      border: 1px solid #ffff;
       color: #fff;
       font-weight: 800;
       margin: 0 0 10px 0;
@@ -69,21 +59,15 @@
 
     &__button {
       height: 38px;
-      background: #000000;
-      background: -webkit-linear-gradient(to left, #434343, #000000);
-      background: linear-gradient(to left, #434343, #000000);
+      background: #3949ab;
       color: #fff;
-      border: 1px solid #797777;
+      border: 1px solid #ffff;
       font-size: 20px;
       font-weight: 900;
       cursor: pointer;
       transition: 2s;
       &:hover {
-        transition: 2s;
-        translate: 1s;
-        background: #000000;
-        background: -webkit-linear-gradient(to bottom, #434343, #000000);
-        background: linear-gradient(to bottom, #434343, #000000);
+        background: rgba(4, 52, 97, 0.992);
       }
     }
   }

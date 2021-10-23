@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import './App.scss';
 import Contacts from './modules/components/Contacts/Contacts';
 import Footer from './modules/components/Footer/Footer';
@@ -6,18 +7,21 @@ import Header from './modules/components/Header/Header';
 import Main from './modules/components/Main/Main';
 import Projects from './modules/components/Projects/Projects';
 import Skills from './modules/components/Skills/Skills';
+import { getProfileDataTC } from './store/profile-reducers';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getProfileDataTC());
+  }, [dispatch]);
+
   return (
     <div className="App">
       <Header />
-
       <Main />
       <Skills />
       <Projects />
-
       <Contacts />
-
       <Footer />
     </div>
   );
