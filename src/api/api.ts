@@ -10,6 +10,12 @@ export const getProfile = {
   },
 };
 
+export const getAdress = {
+  adress() {
+    return instance.get<Array<adressType>>('/adress');
+  },
+};
+
 export type profileType = {
   createdAt: string;
   image: string;
@@ -17,4 +23,14 @@ export type profileType = {
   name: string;
   profession: string;
   surname: string;
+};
+
+export type adressType = {
+  createdAt: string;
+  name: string;
+  street: string;
+  city: string;
+  id: string;
+  mobile: string;
+  email: string;
 };

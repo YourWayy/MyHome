@@ -14,20 +14,25 @@
   &__social {
     display: flex;
     justify-content: space-around;
-    width: 210px;
     height: 50px;
-
-    // &__icon {
-    //   display: block;
-    //   cursor: pointer;
-    // }
   }
 
   &__title {
     color: rgb(160, 42, 42);
     color: #d7d7d7;
-    margin: 18px 0 0 0;
+    margin: 80px 0 0 0;
     font-size: 19px;
     font-weight: 900;
+  }
+  &__info {
+    display: block;
+    margin-bottom: 10px;
+    &-impressum {
+      color: #0178ff;
+      font-size: 17px;
+      &:hover {
+        border-bottom: 1px solid #0178ff;
+      }
+    }
   }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
-import './Projects.scss';
-import Project from './Project/Project';
+import './Shop.scss';
 import { useSelector } from 'react-redux';
 import { AppRootStateType } from '../../../store/store';
 import { ProjectsInitialStateType } from '../../../store/projects-reducers';
@@ -8,12 +7,12 @@ import Fade from 'react-reveal/Fade';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import { PayPalButton } from 'react-paypal-button-v2';
 
-export default function Projects() {
+export default function Shop() {
   let projects = useSelector<AppRootStateType, ProjectsInitialStateType>(state => state.projects);
   return (
     <div className="projects">
       <div className="container projects__container">
-        <SectionTitle title={'Price'} />
+        <SectionTitle title={'Shop'} />
         <ul className="plan__elements__list projects__list">
           <li className="plan__elements">
             <div className="plan__extra">
