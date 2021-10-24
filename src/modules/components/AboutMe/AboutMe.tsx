@@ -1,10 +1,7 @@
-import React, { HTMLAttributes } from 'react';
+import React from 'react';
 import './AboutMe.scss';
 import '../../common/styles/Container.scss';
 import Slide from 'react-reveal/Slide';
-import { useSelector } from 'react-redux';
-import { AppRootStateType } from '../../../store/store';
-import { SkillInitialStateType } from '../../../store/skills-reducers';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 
 export default function AboutMe() {

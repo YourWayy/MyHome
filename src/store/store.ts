@@ -1,14 +1,14 @@
 import { shopReducers } from './shop-reducers';
 import { combineReducers, createStore, applyMiddleware } from 'redux';
 import { ActionTypeProfile, profileReducers } from './profile-reducers';
-import { skillsReducer } from './skills-reducers';
+import { blogReducer } from './blog-reducers';
 import { footerReducer } from './footer-reduser';
 import thunk, { ThunkAction } from 'redux-thunk';
 
 const rootReducer = combineReducers({
   shop: shopReducers,
   profile: profileReducers,
-  skills: skillsReducer,
+  blog: blogReducer,
   footer: footerReducer,
 });
 

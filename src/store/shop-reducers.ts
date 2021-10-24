@@ -1,13 +1,3 @@
-import socialNetwork from '../modules/common/image/social-network.jpg';
-import todolistimage from '../modules/common/image/todo-list.jpg';
-import goSerfImage from '../modules/common/image/go-surf.jpg';
-import konstruktImage from '../modules/common/image/konstrukt.jpg';
-import marioImage from '../modules/common/image/mario.jpg';
-import bathmanImage from '../modules/common/image/bathman.jpg';
-import newYorkerImage from '../modules/common/image/new-yorker.jpg';
-import developmentImage from '../modules/common/image/development-project.jpg';
-import cardsImage from '../modules/common/image/cards.jpg';
-import { v1 } from 'uuid';
 import { Dispatch } from 'redux';
 import { getShop } from '../api/api';
 

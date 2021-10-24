@@ -22,6 +22,12 @@ export const getShop = {
   },
 };
 
+export const getBlog = {
+  blog() {
+    return instance.get<Array<BlogType>>('/blog');
+  },
+};
+
 export type profileType = {
   createdAt: string;
   image: string;
@@ -47,6 +53,16 @@ export type ShopType = {
   avatar: string;
   title: string;
   price: string;
+  image: string;
+  subtitle: string;
+  id: string;
+};
+
+export type BlogType = {
+  createdAt: string;
+  name: string;
+  avatar: string;
+  title: string;
   image: string;
   subtitle: string;
   id: string;

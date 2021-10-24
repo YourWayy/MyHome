@@ -17,8 +17,11 @@ export const Impressum = () => {
   return (
     <>
       <Header type={'impressum'} />
-      <div className="skills">
-        <div className="container skills__container">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div className="impressum">
+        <div className="container impressum__container">
           <h1 className="impressum__title">Impressum</h1>
 
           <span className="impressum__name">{contact.name}</span>
