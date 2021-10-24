@@ -8,15 +8,18 @@ import Header from '../Header/Header';
 import { adressType } from '../../../api/api';
 import { ShopItem } from './ShopItem';
 import { getShopTC, ShopType } from '../../../store/shop-reducers';
+import { useLocation } from 'react-router-dom';
 
 export default function Shop() {
   const contact = useSelector<AppRootStateType, adressType>(state => state.footer);
   const shop = useSelector<AppRootStateType, Array<ShopType>>(state => state.shop.shop);
   const dispatch = useDispatch();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     dispatch(getShopTC());
-  }, []);
+    window.scrollTo(0, 0);
+  }, [dispatch, pathname]);
 
   return (
     <>

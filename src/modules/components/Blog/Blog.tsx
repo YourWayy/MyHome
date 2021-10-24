@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useLocation } from 'react-router-dom';
 import { BlogType, getBlogTC } from '../../../store/blog-reducers';
 import { AppRootStateType } from '../../../store/store';
 import Header from '../Header/Header';
@@ -10,17 +11,19 @@ import { BlogItem } from './BlogItem/BlogItem';
 export const Blog = () => {
   const blog = useSelector<AppRootStateType, Array<BlogType>>(state => state.blog.blog);
   const dispatch = useDispatch();
+  const { pathname } = useLocation();
 
   useEffect(() => {
     dispatch(getBlogTC());
-  }, [dispatch]);
+    window.scrollTo(0, 0);
+  }, [dispatch, pathname]);
 
   console.log(blog);
   return (
     <>
       <Header type={'blog'} />
-      <div className="skills">
-        <div className="container skills__container">
+      <div className="blog">
+        <div className="container blog__container">
           <SectionTitle title={'Blog'} />
 
           {blog.map(blog => (

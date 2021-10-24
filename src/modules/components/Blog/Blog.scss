@@ -1,4 +1,16 @@
 .blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+
+  &__container {
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 80px 0 0 0;
+  }
   &__item {
     position: relative;
   }

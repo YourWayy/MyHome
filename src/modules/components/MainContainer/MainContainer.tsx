@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router';
 import AboutMe from '../AboutMe/AboutMe';
-import Contacts from '../Contacts/Contacts';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Main from '../Main/Main';
-import Shop from '../Shop/Shop';
 
-export const MainContainer = () => (
-  <>
-    <Header type="main" />
-    <Main />
-    <AboutMe />
-    <Footer />
-  </>
-);
+export const MainContainer = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return (
+    <>
+      <Header type="main" />
+      <Main />
+      <AboutMe />
+      <Footer />
+    </>
+  );
+};
