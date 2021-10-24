@@ -22,4 +22,10 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
+  &__text {
+    margin: 0px 0 80px;
+    font-size: 25px;
+    font-family: 'Roboto-Condensed-Bold';
+  }
 }

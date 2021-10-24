@@ -1,14 +1,15 @@
 import React from 'react';
 import { Redirect, Route, Switch } from 'react-router-dom';
-import AboutMe from '../components/AboutMe/AboutMe';
+import { Blog } from '../components/Blog/Blog';
 import { Impressum } from '../components/Impressum/Impressum';
 import { MainContainer } from '../components/MainContainer/MainContainer';
-import Shop from '../components/Projects/Shop';
+import Shop from '../components/Shop/Shop';
 
 export enum PATH {
-  MAIN = '/main',
+  MAIN = '/Irma_Tjandra',
   IMPRESSUM = '/impressum',
   SHOP = '/shop',
+  BLOG = '/blog',
 }
 
 export const Routes = () => {
@@ -18,6 +19,7 @@ export const Routes = () => {
       <Route path={PATH.MAIN} component={MainContainer} />
       <Route exact path={PATH.IMPRESSUM} component={Impressum} />
       <Route exact path={PATH.SHOP} component={Shop} />
+      <Route exact path={PATH.BLOG} component={Blog} />
     </Switch>
   );
 };

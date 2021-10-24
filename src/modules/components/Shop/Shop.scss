@@ -26,6 +26,7 @@
     min-width: 370px;
   }
   &__title {
+    font-family: 'Roboto-Condensed-Bold';
     color: #212121;
     font-size: 30px;
     font-weight: 700;
@@ -43,6 +44,7 @@
     max-width: 620px;
     text-align: center;
     padding: 0 0 126px 0;
+    font-family: 'Roboto-Condensed-Bold';
   }
 
   &__extra {
@@ -54,7 +56,7 @@
     max-width: 370px;
     background-color: #0084fffd;
     text-align: center;
-    padding: 0 0 123px;
+    padding: 0 0 43px;
     transition: 1.5s;
     margin: 20px 0;
 
@@ -116,8 +118,7 @@
   }
 
   &__info {
-    padding: 13px 0 66px 0;
-    max-width: 180px;
+    padding: 13px 20px 66px;
     margin: 0 auto;
   }
 
@@ -132,6 +133,11 @@
     letter-spacing: 0.85px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding: 0 0 10px 0;
+    &_image {
+      object-fit: cover;
+      width: 200px;
+      height: 250px;
+    }
   }
 
   &__button {
@@ -181,6 +187,11 @@
     display: block;
     min-width: 138px;
     position: relative;
+    cursor: pointer;
+    transition: 2s;
+    &:hover {
+      background-image: linear-gradient(#fff0a8, #c7911d);
+    }
 
     &-title {
       font-size: 14px;

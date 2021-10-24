@@ -28,7 +28,7 @@ export const getFooterAC = (
   mobile: string,
   email: string
 ) => {
-  return { type: 'FOOTER/GET-FOOTER', name, street, city, mobile, email };
+  return { type: 'FOOTER/GET-FOOTER', name, street, city, mobile, email } as const;
 };
 
 export const getFooterTC = () => (dispatch: Dispatch) => {

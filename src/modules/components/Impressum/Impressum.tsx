@@ -16,7 +16,7 @@ export const Impressum = () => {
 
   return (
     <>
-      <Header />
+      <Header type={'impressum'} />
       <div className="skills">
         <div className="container skills__container">
           <h1 className="impressum__title">Impressum</h1>
@@ -25,8 +25,12 @@ export const Impressum = () => {
           <span className="impressum__info">{contact.street}</span>
           <span className="impressum__info">{contact.city}</span>
 
-          <span className="impressum__sub-info">Tel: {contact.mobile}</span>
-          <span className="impressum__subtitle">E-Mail: {contact.email}</span>
+          <a className="impressum__email" href={`Tel: ${contact.mobile}`}>
+            Tel: <span className="impressum__email_adress">{contact.mobile}</span>
+          </a>
+          <a className="impressum__email" href={`mailto:${contact.email}`}>
+            E-Mail: <span className="impressum__email_adress">{contact.email}</span>
+          </a>
         </div>
       </div>
     </>

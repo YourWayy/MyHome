@@ -39,7 +39,7 @@ export const profileReducers = (
 };
 
 const profileDataAC = (name: string, surname: string, profession: string, image: string) => {
-  return { type: 'PROFILE/GET_DATA', name, surname, profession, image };
+  return { type: 'PROFILE/GET_DATA', name, surname, profession, image } as const;
 };
 
 export const getProfileDataTC = () => (dispatch: Dispatch) => {

@@ -16,6 +16,12 @@ export const getAdress = {
   },
 };
 
+export const getShop = {
+  shop() {
+    return instance.get<Array<ShopType>>('shop');
+  },
+};
+
 export type profileType = {
   createdAt: string;
   image: string;
@@ -33,4 +39,15 @@ export type adressType = {
   id: string;
   mobile: string;
   email: string;
+};
+
+export type ShopType = {
+  createdAt: string;
+  name: string;
+  avatar: string;
+  title: string;
+  price: string;
+  image: string;
+  subtitle: string;
+  id: string;
 };
