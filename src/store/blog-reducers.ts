@@ -30,7 +30,6 @@ export type BlogInitialStateType = typeof initialState;
 export type BlogType = {
   createdAt: string;
   name: string;
-  avatar: string;
   title: string;
   image: string;
   subtitle: string;
@@ -42,7 +41,6 @@ const initialState = {
     {
       createdAt: '',
       name: '',
-      avatar: '',
       title: '',
       image: '',
       subtitle: '',

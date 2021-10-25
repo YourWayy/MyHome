@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import './Shop.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppRootStateType } from '../../../store/store';
-import Fade from 'react-reveal/Fade';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import Header from '../Header/Header';
 import { adressType } from '../../../api/api';

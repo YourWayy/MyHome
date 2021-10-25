@@ -9,8 +9,10 @@
 
   &__container {
     flex-direction: column;
-    min-height: 100vh;
-    padding: 100px 0 0 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 99vh;
+    padding: 80px 0 0 0;
     background: none;
   }
   &__name {
@@ -29,13 +31,18 @@
   }
 
   &__email {
+    width: 100%;
     font-size: 20px;
     margin: 20px 0;
+    padding: 10px 0;
     color: #fff;
     cursor: default;
+    text-align: center;
+    display: inline-block;
     &_adress {
-      color: #0178ff;
+      color: #2f90ff;
       cursor: pointer;
+      display: block;
     }
     &_yellow {
       display: block;

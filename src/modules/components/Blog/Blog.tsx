@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
+import { getBlog, instance } from '../../../api/api';
 import { BlogType, getBlogTC } from '../../../store/blog-reducers';
 import { AppRootStateType } from '../../../store/store';
 import Header from '../Header/Header';
@@ -16,6 +17,14 @@ export const Blog = () => {
   useEffect(() => {
     dispatch(getBlogTC());
     window.scrollTo(0, 0);
+    getBlog.updateBlog({
+      createdAt: '',
+      name: '',
+      title: 'New Title',
+      image: '',
+      subtitle: 'helo helo',
+      id: '',
+    });
   }, [dispatch, pathname]);
 
   console.log(blog);
@@ -26,7 +35,7 @@ export const Blog = () => {
         <div className="container blog__container">
           <SectionTitle title={'Blog'} />
 
-          {blog.map(blog => (
+          {blog.reverse().map(blog => (
             <BlogItem key={blog.id} blog={blog} />
           ))}
         </div>

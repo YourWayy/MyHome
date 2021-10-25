@@ -4,34 +4,10 @@ import '../../common/styles/Container.scss';
 import { useSelector } from 'react-redux';
 import { AppRootStateType } from '../../../store/store';
 import { ProfileType } from '../../../store/profile-reducers';
-import Particles from 'react-particles-js';
 import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt';
 import StarfieldAnimation from 'react-starfield-animation';
-import BigBangStarField from 'react-big-bang-star-field';
-
-let ParticleParamsDots = {
-  particles: {
-    size: {
-      value: 1,
-    },
-    line_linked: {
-      enable: false,
-    },
-  },
-};
-
-let ParticleParamsLines = {
-  particles: {
-    size: {
-      value: 2,
-    },
-    line_linked: {
-      enable: true,
-    },
-  },
-};
 
 export default function Main() {
   const profile = useSelector<AppRootStateType, ProfileType>(state => state.profile);

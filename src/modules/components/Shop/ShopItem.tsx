@@ -5,6 +5,7 @@ import { AppRootStateType } from '../../../store/store';
 
 export const ShopItem = (props: ShopItemType) => {
   const contact = useSelector<AppRootStateType, adressType>(state => state.footer);
+  
 
   return (
     <li className="plan__elements">
