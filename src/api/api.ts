@@ -26,12 +26,6 @@ export const getBlog = {
   blog() {
     return instance.get<Array<BlogType>>('/blog');
   },
-  updateBlog(cardsPack: BlogType) {
-    return instance.put('/blog/1/', {
-      title: 'Very Very New Title',
-      image: 'https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg',
-    });
-  },
 };
 
 export type profileType = {

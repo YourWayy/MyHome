@@ -1,10 +1,10 @@
 import React from 'react';
 import './AboutMe.scss';
 import '../../common/styles/Container.scss';
-import Slide from 'react-reveal/Slide';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import { useSelector } from 'react-redux';
 import { AppRootStateType } from '../../../store/store';
+import Fade from 'react-reveal/Fade';
 import { ProfileType } from '../../../store/profile-reducers';
 
 export default function AboutMe() {
@@ -15,7 +15,7 @@ export default function AboutMe() {
   return (
     <div className="skills">
       <div className="container skills__container">
-        <Slide right>
+        <Fade>
           <SectionTitle title={'About Me'} />
           <div className="skills__text">{profile.aboutme}</div>
           <div className="skills__video-wrapper">
@@ -29,7 +29,7 @@ export default function AboutMe() {
               allowFullScreen
             ></iframe>
           </div>
-        </Slide>
+        </Fade>
       </div>
     </div>
   );

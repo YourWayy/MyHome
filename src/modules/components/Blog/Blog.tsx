@@ -17,14 +17,6 @@ export const Blog = () => {
   useEffect(() => {
     dispatch(getBlogTC());
     window.scrollTo(0, 0);
-    getBlog.updateBlog({
-      createdAt: '',
-      name: '',
-      title: 'New Title',
-      image: '',
-      subtitle: 'helo helo',
-      id: '',
-    });
   }, [dispatch, pathname]);
 
   console.log(blog);
