@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // background: url('../../common/image/space2.jpg'), no-repeat;
 
   &__profession {
     display: block;
@@ -80,8 +79,7 @@
     font-family: 'Archivo Black';
     display: block;
     font-size: 70px;
-    color: #171717;
-    text-shadow: #fff 1px 1px 0, #fff -1px -1px 0, #fff -1px 1px 0, #fff 1px -1px 0;
+    color: #fff;
     line-height: 80px;
   }
 

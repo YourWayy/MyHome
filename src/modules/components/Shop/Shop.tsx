@@ -8,6 +8,7 @@ import { adressType } from '../../../api/api';
 import { ShopItem } from './ShopItem';
 import { getShopTC, ShopType } from '../../../store/shop-reducers';
 import { useLocation } from 'react-router-dom';
+import { getFooterTC } from '../../../store/footer-reduser';
 
 export default function Shop() {
   const contact = useSelector<AppRootStateType, adressType>(state => state.footer);
@@ -17,6 +18,7 @@ export default function Shop() {
 
   useEffect(() => {
     dispatch(getShopTC());
+    dispatch(getFooterTC());
     window.scrollTo(0, 0);
   }, [dispatch, pathname]);
 

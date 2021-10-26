@@ -31,9 +31,10 @@
   }
 
   &__email {
+    font-weight: 900;
     width: 100%;
     font-size: 20px;
-    margin: 20px 0;
+    margin: 10px 0;
     padding: 10px 0;
     color: #fff;
     cursor: default;
@@ -46,9 +47,8 @@
     }
     &_yellow {
       display: block;
-      color: #ff9901;
+      color: #ff9933;
       cursor: pointer;
-      margin: 0 10px;
       font-size: 19px;
     }
   }

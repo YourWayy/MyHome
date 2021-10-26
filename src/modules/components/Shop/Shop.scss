@@ -58,7 +58,7 @@
     text-align: center;
     padding: 0 0 43px;
     transition: 1.5s;
-    margin: 20px 0;
+    margin: 20px 0 40px;
 
     &:hover {
       box-shadow: 0 3px 25px rgba(255, 249, 249, 0.678);
@@ -74,7 +74,7 @@
 
   &__header {
     position: relative;
-    padding: 49px 10px 67px;
+    padding: 29px 10px 37px;
     color: #fffffffd;
     background-color: #3949ab;
 
@@ -118,12 +118,12 @@
   }
 
   &__info {
-    padding: 13px 20px 66px;
+    padding: 13px 20px 10px;
     margin: 0 auto;
   }
 
   &__list {
-    margin: 36px 0 0;
+    margin: 10px 0 0;
     color: rgb(252, 244, 244);
     font-weight: 900;
     font-family: 'Open Sans';
@@ -136,7 +136,7 @@
     &_image {
       object-fit: cover;
       width: 200px;
-      height: 250px;
+      height: 200px;
     }
   }
 
