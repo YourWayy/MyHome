@@ -60,6 +60,8 @@
     padding: 0 0 43px;
     transition: 1.5s;
     margin: 20px 0 40px;
+    border-radius: 5px;
+    overflow: hidden;
 
     &:hover {
       box-shadow: 0 3px 25px rgba(255, 249, 249, 0.678);
@@ -138,6 +140,7 @@
       object-fit: cover;
       width: 200px;
       height: 200px;
+      border-radius: 5px;
     }
   }
 
@@ -153,7 +156,6 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     user-select: none;
-    // cursor: url('../img/icon/cursor.png'), pointer;
     transition: 1.5s;
 
     &:hover {
