@@ -23,6 +23,7 @@
   padding: 0 0 123px;
 
   &__extra {
+    position: relative;
     min-width: 370px;
   }
   &__title {
@@ -164,6 +165,14 @@
 }
 
 .paypal {
+  &__button {
+    position: absolute;
+    left: 22%;
+    bottom: 0;
+    &-wrapper {
+      height: 50px;
+    }
+  }
   &-logo {
     font-family: Verdana, Tahoma;
     font-weight: bold;
@@ -223,6 +232,7 @@
       min-width: 290px;
     }
     &__elements {
+      position: relative;
       max-width: 290px;
       text-align: center;
       padding: 0 0 63px;

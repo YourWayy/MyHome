@@ -5,7 +5,6 @@ import { AppRootStateType } from '../../../store/store';
 
 export const ShopItem = (props: ShopItemType) => {
   const contact = useSelector<AppRootStateType, adressType>(state => state.footer);
-  
 
   return (
     <li className="plan__elements">
@@ -27,8 +26,8 @@ export const ShopItem = (props: ShopItemType) => {
             </a>
           </li>
         </ul>
-        <div>
-          <a href="https://www.paypal.com/de/home/" target="_blank">
+        <div className="paypal__button-wrapper">
+          <a href="https://www.paypal.com/de/home/" target="_blank" className="paypal__button">
             <button className="paypal-button">
               <span className="paypal-button-title">Buy now with</span>
               <span className="paypal-logo">
