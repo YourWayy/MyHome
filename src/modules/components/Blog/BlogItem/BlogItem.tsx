@@ -4,7 +4,7 @@ import { BlogType } from '../../../../store/blog-reducers';
 export const BlogItem = (props: BlogsPropsType) => {
   return (
     <>
-      <div className="blog__item">
+      <div className="blog__item ">
         <div className="blog__title">
           <span>{props.blog.title}</span>
         </div>

@@ -13,6 +13,7 @@
   }
   &__item {
     position: relative;
+    border: 1px solid white;
   }
   &__image {
     left: 0;
@@ -36,11 +37,13 @@
     color: rgb(255, 255, 255);
     font-size: 45px;
     margin: 100px 0 0 0;
+    border-bottom: 1px solid white;
   }
 
   &__text {
     font-size: 25px;
     margin: 50px 0 100px 0;
+    padding: 0 0 40px 0;
   }
 }
 

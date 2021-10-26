@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   background: #141e30;
   background: -webkit-linear-gradient(to right, #243b55, #141e30);
   background: linear-gradient(to right, #243b55, #141e30);
@@ -9,12 +10,10 @@
   &__container {
     flex-direction: column;
     min-height: 100vh;
+    min-width: 100%;
     padding: 80px 0 0 0;
   }
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
   }
 }
 
@@ -53,7 +52,7 @@
   }
 
   &__elements {
-    display: flex;
+    // display: flex;
     max-width: 370px;
     background-color: #0084fffd;
     text-align: center;
@@ -72,6 +71,13 @@
       font-weight: 800;
       letter-spacing: 1.25px;
       margin-bottom: 40px;
+    }
+
+    &__list {
+      min-width: 320px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
   }
 
@@ -121,11 +127,14 @@
   }
 
   &__info {
-    padding: 13px 20px 10px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__list {
+    display: block;
     margin: 10px 0 0;
     color: rgb(252, 244, 244);
     font-weight: 900;
@@ -136,6 +145,7 @@
     letter-spacing: 0.85px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     padding: 0 0 10px 0;
+    align-items: center;
     &_image {
       object-fit: cover;
       width: 200px;
@@ -168,11 +178,11 @@
 
 .paypal {
   &__button {
-    position: absolute;
-    left: 22%;
-    bottom: 0;
     &-wrapper {
-      height: 50px;
+      margin: 20px 0 0 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   &-logo {
@@ -190,13 +200,13 @@
   }
 
   &-button {
-    padding: 15px 30px;
+    padding: 15px 0px;
     border: 1px solid #ff9933;
     border-radius: 5px;
     background-image: linear-gradient(#fff0a8, #f9b421);
     margin: 0 auto;
     display: block;
-    min-width: 138px;
+    max-width: 138px;
     position: relative;
     cursor: pointer;
     transition: 2s;
