@@ -28,7 +28,7 @@ export default function Shop() {
       <div className="projects">
         <div className="container projects__container">
           <SectionTitle title={'Shop'} />
-          <ul className="projects__list plan__elements__list ">
+          <ul className=" plan__elements__list ">
             {shop.map(shop => (
               <ShopItem key={shop.id} shop={shop} />
             ))}

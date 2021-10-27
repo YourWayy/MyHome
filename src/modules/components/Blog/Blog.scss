@@ -25,6 +25,8 @@
   }
 
   &__title {
+    font-family: 'Times New Roman Regular';
+    font-weight: 900;
     color: rgb(255, 255, 255);
     position: absolute;
     top: 40%;
@@ -34,6 +36,8 @@
   }
 
   &__subtitle {
+    font-family: 'Times New Roman Regular';
+    font-weight: 900;
     color: rgb(255, 255, 255);
     font-size: 45px;
     margin: 100px 0 0 0;
@@ -41,6 +45,7 @@
   }
 
   &__text {
+    font-family: 'Times New Roman Regular';
     font-size: 25px;
     margin: 50px 0 100px 0;
     padding: 0 0 40px 0;

@@ -15,3 +15,17 @@
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Andalusia Script';
+  src: local('☺'), url('./font-family/Andalusia_Script/Andalusia_Script.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Times New Roman Regular';
+  src: local('☺'), url('./font-family/Times_New_Roman/TimesNewRomanPSMT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

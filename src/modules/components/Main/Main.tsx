@@ -32,6 +32,7 @@ export default function Main() {
                   speed={300}
                   typingDelay={1000}
                   cursor="_"
+                  className={'main__typing-effect'}
                 />
                 <span className="main__name">{profile.name}</span>
                 <span className="main__surname">{profile.surname}</span>

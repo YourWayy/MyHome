@@ -76,7 +76,7 @@
   }
 
   &__name {
-    font-family: 'Archivo Black';
+    font-family: 'Andalusia Script';
     display: block;
     font-size: 70px;
     color: #fff;
@@ -84,11 +84,14 @@
   }
 
   &__surname {
-    font-family: 'Archivo Black';
+    font-family: 'Andalusia Script';
     display: block;
     font-size: 70px;
   }
 
+  &__typing-effect {
+    font-family: 'Andalusia Script';
+  }
   &__photo {
     background-size: cover;
     height: 570px;
