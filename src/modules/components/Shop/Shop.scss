@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  min-width: 80%;
   background: #141e30;
   background: -webkit-linear-gradient(to right, #243b55, #141e30);
   background: linear-gradient(to right, #243b55, #141e30);
@@ -10,10 +10,8 @@
   &__container {
     flex-direction: column;
     min-height: 100vh;
-    min-width: 100%;
-    padding: 80px 0 0 0;
-  }
-  &__list {
+    width: 100%;
+    padding: 20px 0 0 0;
   }
 }
 
@@ -23,7 +21,7 @@
 
   &__extra {
     position: relative;
-    min-width: 370px;
+    min-width: 270px;
   }
   &__title {
     font-family: 'Roboto-Condensed-Bold';
@@ -52,7 +50,6 @@
   }
 
   &__elements {
-    // display: flex;
     max-width: 370px;
     background-color: #0084fffd;
     text-align: center;
@@ -74,7 +71,8 @@
     }
 
     &__list {
-      min-width: 320px;
+      min-width: 260px;
+      margin: 0 10px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
@@ -149,7 +147,7 @@
     &_image {
       object-fit: cover;
       width: 200px;
-      height: 200px;
+      height: 150px;
       border-radius: 5px;
     }
   }

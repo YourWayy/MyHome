@@ -20,7 +20,7 @@ export const ShopItem = (props: ShopItemType) => {
           <img className="plan__list_image" src={props.shop.image} />
           <li className="plan__list">{props.shop.subtitle}</li>
           <li className="plan__list">
-            Click Buy {'>'} Pay {'>'} and Send Me Email:
+            Pay {'&'} and Send Me Email:
             <a className="impressum__email" href={`mailto:${contact.email}`}>
               <span className="impressum__email_yellow">{contact.email}</span>
             </a>

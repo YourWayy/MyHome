@@ -18,7 +18,6 @@
   }
 
   &__container {
-    padding: 100px 0 10px;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -33,10 +32,9 @@
     align-items: center;
     flex-wrap: wrap;
     background: #141e309d;
-    background: -webkit-linear-gradient(to right, #243b55dc, #141e30d3);
-    background: linear-gradient(to right, #243b55dc, #141e30d3);
+    background: -webkit-linear-gradient(to right, #243b554b, #141e30d3);
+    background: linear-gradient(to right, #243b5546, #141e301c);
 
-    min-height: 580px;
     width: 100%;
     padding: 0 10px;
   }
@@ -103,7 +101,7 @@
 @media (max-width: 1239px) {
   .main {
     &__container {
-      margin: 50px 0 10px;
+      padding: 70px 0 10px;
     }
     &__profession {
       margin: 20px 0 10px 0;
@@ -111,7 +109,7 @@
 
     &__wrapper {
       &__left {
-        margin: 0 0 0px;
+        margin: 50px 0 0px;
       }
       &__right {
         margin: 0 0 10px 0;
@@ -124,33 +122,39 @@
   }
 }
 
+@media (max-width: 1224px) {
+  .main {
+    &__photo {
+      height: 470px;
+      width: 380;
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .main {
-    &__container {
-      padding: 50px 0 10px;
-    }
     min-height: 100vh;
     &__name {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     &__surname {
-      font-size: 40px;
+      font-size: 30px;
     }
 
     &__wrapper {
       &__left {
         max-height: 50vh;
         width: 480px;
-        margin: 0;
+        margin: 10px 0;
       }
 
       &__right {
-        margin: 0;
+        margin: 10px 0;
       }
     }
     &__photo {
-      max-height: 50vh;
+      height: 300px;
     }
   }
 }

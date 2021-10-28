@@ -21,13 +21,18 @@ export const Blog = () => {
   return (
     <>
       <Header type={'blog'} />
-      <div className="blog">
-        <div className="container blog__container">
+      <div className="blogs">
+        <div className="container blogs__container">
           <SectionTitle title={'Blog'} />
-
-          {blog.reverse().map(blog => (
-            <BlogItem key={blog.id} blog={blog} />
-          ))}
+          <section className="blog">
+            <div className="content__conteiner">
+              <div className="blog__news">
+                <ul className="blog__list">
+                  {blog.map(blog => <BlogItem key={blog.id} blog={blog} />).reverse()}
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </>

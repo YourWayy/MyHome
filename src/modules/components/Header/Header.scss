@@ -1,9 +1,7 @@
 .header {
   z-index: 999;
   height: 80px;
-  background: #141e309d;
-  background: -webkit-linear-gradient(to right, #243b55dc, #141e30d3);
-  background: linear-gradient(to right, #243b55dc, #141e30d3);
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,10 +10,26 @@
   top: 0;
   right: 0;
   opacity: 0.9;
-  font-family: 'Roboto-Condensed-Bold';
   &__wrapper {
     justify-content: flex-end;
     align-items: center;
+  }
+
+  &__active {
+    z-index: 999;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    opacity: 0.9;
+    background: #141e309d;
+    background: -webkit-linear-gradient(to right, #243b55dc, #141e30d3);
+    background: linear-gradient(to right, #243b55dc, #141e30d3);
   }
 }
 
