@@ -2,6 +2,7 @@ import profileImage from '../modules/common/image/profile-image/profile-image.jp
 import { Dispatch } from 'redux';
 import { getProfile } from '../api/api';
 import { profile } from 'console';
+import { appChangeStatus } from './app-reducers';
 
 export type ProfileType = {
   name: string;
@@ -56,9 +57,9 @@ const profileDataAC = (
 };
 
 export const getProfileDataTC = () => (dispatch: Dispatch) => {
+  dispatch(appChangeStatus('loading'));
   return getProfile.profile().then(res => {
     const profile = res.data[0];
-
     dispatch(
       profileDataAC(
         profile.name,
@@ -69,5 +70,6 @@ export const getProfileDataTC = () => (dispatch: Dispatch) => {
         profile.aboutme
       )
     );
+    dispatch(appChangeStatus('done'));
   });
 };

@@ -132,11 +132,13 @@
     padding: 61px 90px 61px 0;
   }
   &__link {
+    font-family: 'Times New Roman Regular';
     color: #fff;
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 900;
     line-height: 22px;
     letter-spacing: 1.25px;
+    cursor: pointer;
 
     &:hover {
       color: #00897b;
@@ -152,7 +154,8 @@
   }
 
   &__message {
-    font-size: 15px;
+    font-family: 'Times New Roman Regular';
+    font-size: 18px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: 0.75px;

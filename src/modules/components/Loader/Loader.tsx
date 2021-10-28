@@ -3,22 +3,33 @@ import './Loader.scss';
 
 export const Loader = () => {
   return (
-    <div className="circles">
-      <div className="circle1"></div>
-      <div className="circle2"></div>
-      <div className="circle3"></div>
-      <div className="circle4"></div>
-      <div className="circle5"></div>
-      <div className="circle6"></div>
-      <div className="circle7"></div>
-      <div className="circle8"></div>
-      <div className="circle9"></div>
-      <div className="circle10"></div>
-      <div className="circle11"></div>
-      <div className="circle12"></div>
-      <div className="circle13"></div>
-      <div className="circle14"></div>
-      <div className="circle15"></div>
-    </div>
+    <>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div className="plasma-2__wrapper">
+        <svg width="0" height="0">
+          <filter id="gooey-plasma-2">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" />
+            <feColorMatrix
+              in="blur"
+              mode="matrix"
+              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -16"
+              result="goo"
+            />
+          </filter>
+        </svg>
+        <div className="plasma-2">
+          <ul className="gooey-container">
+            <li className="bubble"></li>
+            <li className="bubble"></li>
+            <li className="bubble"></li>
+            <li className="bubble"></li>
+            <li className="bubble"></li>
+            <li className="bubble"></li>
+          </ul>
+        </div>
+      </div>
+    </>
   );
 };

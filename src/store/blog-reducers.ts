@@ -1,5 +1,6 @@
 import { Dispatch } from 'redux';
 import { getBlog } from '../api/api';
+import { appChangeStatus } from './app-reducers';
 
 export const blogReducer = (
   state: BlogInitialStateType = initialState,
@@ -20,8 +21,10 @@ export const getBlogAC = (blog: Array<BlogType>) => {
 };
 
 export const getBlogTC = () => (dispatch: Dispatch) => {
+  dispatch(appChangeStatus('loading'));
   getBlog.blog().then(res => {
     dispatch(getBlogAC(res.data));
+    dispatch(appChangeStatus('done'));
   });
 };
 

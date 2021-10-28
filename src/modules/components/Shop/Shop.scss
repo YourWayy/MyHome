@@ -64,6 +64,7 @@
     }
 
     &__title {
+      font-family: 'Andalusia Script';
       font-size: 25px;
       font-weight: 800;
       letter-spacing: 1.25px;
@@ -104,6 +105,7 @@
   }
 
   &__price {
+    font-family: 'Andalusia Script';
     font-size: 50px;
     display: inline-flex;
     line-height: 40px;
@@ -136,7 +138,7 @@
     margin: 10px 0 0;
     color: rgb(252, 244, 244);
     font-weight: 900;
-    font-family: 'Open Sans';
+    font-family: 'Andalusia Script';
     font-size: 22px;
     font-weight: 300;
     line-height: 22px;

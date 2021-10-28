@@ -9,9 +9,11 @@ import { ShopItem } from './ShopItem';
 import { getShopTC, ShopType } from '../../../store/shop-reducers';
 import { useLocation } from 'react-router-dom';
 import { getFooterTC } from '../../../store/footer-reduser';
+import { StatusType } from '../../../store/app-reducers';
+import { Loader } from '../Loader/Loader';
 
 export default function Shop() {
-  const contact = useSelector<AppRootStateType, adressType>(state => state.footer);
+  const loader = useSelector<AppRootStateType, StatusType>(state => state.app.status);
   const shop = useSelector<AppRootStateType, Array<ShopType>>(state => state.shop.shop);
   const dispatch = useDispatch();
   const { pathname } = useLocation();
@@ -24,17 +26,23 @@ export default function Shop() {
 
   return (
     <>
-      <Header type={'shop'} />
-      <div className="projects">
-        <div className="container projects__container">
-          <SectionTitle title={'Shop'} />
-          <ul className=" plan__elements__list ">
-            {shop.map(shop => (
-              <ShopItem key={shop.id} shop={shop} />
-            ))}
-          </ul>
-        </div>
-      </div>
+      {loader === 'loading' ? (
+        <Loader />
+      ) : (
+        <>
+          <Header type={'shop'} />
+          <div className="projects">
+            <div className="container projects__container">
+              <SectionTitle title={'Shop'} />
+              <ul className=" plan__elements__list ">
+                {shop.map(shop => (
+                  <ShopItem key={shop.id} shop={shop} />
+                ))}
+              </ul>
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 }

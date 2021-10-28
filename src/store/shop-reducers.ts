@@ -1,5 +1,6 @@
 import { Dispatch } from 'redux';
 import { getShop } from '../api/api';
+import { appChangeStatus } from './app-reducers';
 
 export const shopReducers = (
   shop: ShopInitialStateType = initialState,
@@ -20,8 +21,10 @@ export const getShopsAC = (shop: Array<ShopType>) => {
 };
 
 export const getShopTC = () => (dispatch: Dispatch) => {
+  dispatch(appChangeStatus('loading'));
   getShop.shop().then(res => {
     dispatch(getShopsAC(res.data));
+    dispatch(appChangeStatus('done'));
   });
 };
 
