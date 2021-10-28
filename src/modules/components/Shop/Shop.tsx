@@ -15,6 +15,7 @@ import { Loader } from '../Loader/Loader';
 export default function Shop() {
   const loader = useSelector<AppRootStateType, StatusType>(state => state.app.status);
   const shop = useSelector<AppRootStateType, Array<ShopType>>(state => state.shop.shop);
+  const paypalMe = useSelector<AppRootStateType, string>(state => state.footer.paypalme);
   const dispatch = useDispatch();
   const { pathname } = useLocation();
 
@@ -36,7 +37,7 @@ export default function Shop() {
               <SectionTitle title={'Shop'} />
               <ul className=" plan__elements__list ">
                 {shop.map(shop => (
-                  <ShopItem key={shop.id} shop={shop} />
+                  <ShopItem key={shop.id} shop={shop} paypalMe={paypalMe} />
                 ))}
               </ul>
             </div>

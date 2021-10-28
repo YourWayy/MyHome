@@ -27,7 +27,7 @@ export const ShopItem = (props: ShopItemType) => {
           </li>
         </ul>
         <div className="paypal__button-wrapper">
-          <a href="https://www.paypal.com/de/home/" target="_blank" className="paypal__button">
+          <a href={props.paypalMe} target="_blank" className="paypal__button">
             <button className="paypal-button">
               <span className="paypal-button-title">Buy now with</span>
               <span className="paypal-logo">
@@ -44,4 +44,5 @@ export const ShopItem = (props: ShopItemType) => {
 
 type ShopItemType = {
   shop: ShopType;
+  paypalMe: string;
 };

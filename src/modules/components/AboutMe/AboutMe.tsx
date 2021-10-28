@@ -20,17 +20,7 @@ export default function AboutMe() {
           <SectionTitle title={'About Me'} />
           <div className="skills__text">{profile.aboutme}</div>
           <div className="skills__video-wrapper">
-            {/* <iframe
-              width="620"
-              height="420"
-              src={profile.video}
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe> */}
-
-            <ReactPlayer url="https://www.youtube.com/watch?v=CGJ8OLK2dao" />
+            <ReactPlayer url={profile.video} />
           </div>
         </Fade>
       </div>

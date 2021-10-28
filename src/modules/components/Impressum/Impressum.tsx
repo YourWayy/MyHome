@@ -8,6 +8,7 @@ import './Impressum.scss';
 
 export const Impressum = () => {
   const contact = useSelector<AppRootStateType, adressType>(state => state.footer);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
