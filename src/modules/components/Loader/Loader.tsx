@@ -4,9 +4,6 @@ import './Loader.scss';
 export const Loader = () => {
   return (
     <>
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
       <div className="plasma-2__wrapper">
         <svg width="0" height="0">
           <filter id="gooey-plasma-2">

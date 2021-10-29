@@ -19,11 +19,11 @@ export const MainContainer = () => {
 
   return (
     <>
+      <Header type="main" />
       {loader === 'loading' ? (
         <Loader />
       ) : (
         <>
-          <Header type="main" />
           <Main />
           <AboutMe />
           <Footer />

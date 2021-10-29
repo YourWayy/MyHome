@@ -39,6 +39,7 @@ export type ShopType = {
   image: string;
   subtitle: string;
   id: string;
+  unit: string;
 };
 
 export type ShopInitialStateType = typeof initialState;
@@ -54,6 +55,7 @@ const initialState = {
       image: '',
       subtitle: '',
       id: '1',
+      unit: '',
     },
   ],
 };

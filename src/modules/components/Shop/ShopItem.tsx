@@ -11,7 +11,7 @@ export const ShopItem = (props: ShopItemType) => {
       <div className="plan__extra">
         <div className="plan__header">
           <div className="plan__elements__title">{props.shop.title}</div>
-          <div className="plan__price" data-currency="€" data-period="per tasse">
+          <div className="plan__price" data-currency="€" data-period={props.shop.unit}>
             {props.shop.price}
           </div>
         </div>

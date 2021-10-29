@@ -59,6 +59,7 @@ export type ShopType = {
   image: string;
   subtitle: string;
   id: string;
+  unit: string;
 };
 
 export type BlogType = {
