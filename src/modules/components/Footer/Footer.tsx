@@ -20,17 +20,6 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__container">
         <Fade>
-          <div className="footer__social">
-            <div>
-              <span className="footer__info">{adrees.name}</span>
-              <span className="footer__info">{adrees.street}</span>
-              <span className="footer__info">{adrees.city}</span>
-              <Link className="footer__info-impressum" to={PATH.IMPRESSUM}>
-                Impressum
-              </Link>
-            </div>
-          </div>
-
           <div className="footer__title">© {new Date().getFullYear()} All Rights Reserved</div>
         </Fade>
       </div>
