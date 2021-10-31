@@ -17,7 +17,7 @@ export const ShopItem = (props: ShopItemType) => {
         </div>
 
         <ul className="plan__info">
-          <img className="plan__list_image" src={props.shop.image} />
+          <img className="plan__list_image" src={props.shop.image} alt="shop" />
           <li className="plan__list">{props.shop.subtitle}</li>
           <li className="plan__list">
             Pay {'&'} and Send Me Email:
@@ -27,7 +27,7 @@ export const ShopItem = (props: ShopItemType) => {
           </li>
         </ul>
         <div className="paypal__button-wrapper">
-          <a href={props.paypalMe} target="_blank" className="paypal__button">
+          <a href={props.paypalMe} target="_blank" className="paypal__button" rel="noreferrer">
             <button className="paypal-button">
               <span className="paypal-button-title">Buy now with</span>
               <span className="paypal-logo">

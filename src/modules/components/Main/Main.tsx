@@ -8,7 +8,6 @@ import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt';
 import StarfieldAnimation from 'react-starfield-animation';
-import { Loader } from '../Loader/Loader';
 
 export default function Main() {
   const profile = useSelector<AppRootStateType, ProfileType>(state => state.profile);

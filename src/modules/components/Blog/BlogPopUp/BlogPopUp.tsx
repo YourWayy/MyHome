@@ -5,7 +5,7 @@ export const BlogPopUp = (props: BlogPopUpType) => {
   return (
     <div className="blogPopUp">
       <div className="blogPopUp__item ">
-        <img className="blogPopUp__image" src={props.img} />
+        <img alt="popup" className="blogPopUp__image" src={props.img} />
       </div>
       <div className="blogPopUp__subtitle">{props.title}</div>
       <div className="blogPopUp__text">{props.text}</div>

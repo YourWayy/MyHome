@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AppRootStateType } from '../../../store/store';
 import { SectionTitle } from '../SectionTitle/SectionTitle';
 import Header from '../Header/Header';
-import { adressType } from '../../../api/api';
 import { ShopItem } from './ShopItem';
 import { getShopTC, ShopType } from '../../../store/shop-reducers';
 import { useLocation } from 'react-router-dom';
