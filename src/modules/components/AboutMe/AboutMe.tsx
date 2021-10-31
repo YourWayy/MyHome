@@ -11,8 +11,6 @@ import ReactPlayer from 'react-player';
 export default function AboutMe() {
   const profile = useSelector<AppRootStateType, ProfileType>(state => state.profile);
 
-  console.log(profile.video);
-
   return (
     <div className="skills">
       <div className="container skills__container">
