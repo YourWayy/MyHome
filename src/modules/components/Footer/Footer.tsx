@@ -31,7 +31,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="footer__title">© 2021 All Rights Reserved</div>
+          <div className="footer__title">© {new Date().getFullYear()} All Rights Reserved</div>
         </Fade>
       </div>
     </footer>

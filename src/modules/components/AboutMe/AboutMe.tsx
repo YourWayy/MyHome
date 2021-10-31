@@ -19,9 +19,13 @@ export default function AboutMe() {
         <Fade>
           <SectionTitle title={'About Me'} />
           <div className="skills__text">{profile.aboutme}</div>
-          <div className="skills__video-wrapper">
-            <ReactPlayer url={profile.video} />
-          </div>
+          {!profile.video ? (
+            ''
+          ) : (
+            <div className="skills__video-wrapper">
+              <ReactPlayer url={profile.video} />
+            </div>
+          )}
         </Fade>
       </div>
     </div>
