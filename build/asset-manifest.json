@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/MyHome/static/css/main.d79abdc8.chunk.css",
-    "main.js": "/MyHome/static/js/main.e7c1f416.chunk.js",
-    "main.js.map": "/MyHome/static/js/main.e7c1f416.chunk.js.map",
+    "main.css": "/MyHome/static/css/main.c9d377a6.chunk.css",
+    "main.js": "/MyHome/static/js/main.88f377d7.chunk.js",
+    "main.js.map": "/MyHome/static/js/main.88f377d7.chunk.js.map",
     "runtime-main.js": "/MyHome/static/js/runtime-main.065a41fd.js",
     "runtime-main.js.map": "/MyHome/static/js/runtime-main.065a41fd.js.map",
     "static/js/2.686477ef.chunk.js": "/MyHome/static/js/2.686477ef.chunk.js",
     "static/js/2.686477ef.chunk.js.map": "/MyHome/static/js/2.686477ef.chunk.js.map",
     "index.html": "/MyHome/index.html",
-    "static/css/main.d79abdc8.chunk.css.map": "/MyHome/static/css/main.d79abdc8.chunk.css.map",
+    "static/css/main.c9d377a6.chunk.css.map": "/MyHome/static/css/main.c9d377a6.chunk.css.map",
     "static/js/2.686477ef.chunk.js.LICENSE.txt": "/MyHome/static/js/2.686477ef.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/MyHome/static/media/TimesNewRomanPSMT.813be5de.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.065a41fd.js",
     "static/js/2.686477ef.chunk.js",
-    "static/css/main.d79abdc8.chunk.css",
-    "static/js/main.e7c1f416.chunk.js"
+    "static/css/main.c9d377a6.chunk.css",
+    "static/js/main.88f377d7.chunk.js"
   ]
 }

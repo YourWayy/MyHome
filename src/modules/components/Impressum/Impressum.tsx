@@ -15,6 +15,8 @@ export const Impressum = () => {
     dispatch(getFooterTC());
   }, [dispatch]);
 
+  console.log(contact.text);
+
   return (
     <>
       <Header type={'impressum'} />
@@ -35,6 +37,10 @@ export const Impressum = () => {
           <a className="impressum__email" href={`mailto:${contact.email}`}>
             E-Mail: <span className="impressum__email_adress">{contact.email}</span>
           </a>
+
+          <span className="impressum__info">Haftungsausschluss:</span>
+          <span className="impressum__info">Rechtliche Hinweise:</span>
+          <span className="impressum__info">{contact.text}</span>
         </div>
       </div>
     </>

@@ -48,6 +48,7 @@ export type adressType = {
   mobile: string;
   email: string;
   paypalme: string;
+  text: string;
 };
 
 export type ShopType = {

@@ -16,6 +16,7 @@ export const footerReducer = (
         mobile: action.mobile,
         email: action.email,
         paypalme: action.paypalme,
+        text: action.text,
       };
     default:
       return footer;
@@ -28,9 +29,10 @@ export const getFooterAC = (
   city: string,
   mobile: string,
   email: string,
-  paypalme: string
+  paypalme: string,
+  text: string
 ) => {
-  return { type: 'FOOTER/GET-FOOTER', name, street, city, mobile, email, paypalme } as const;
+  return { type: 'FOOTER/GET-FOOTER', name, street, city, mobile, email, paypalme, text } as const;
 };
 
 export const getFooterTC = () => (dispatch: Dispatch) => {
@@ -43,7 +45,8 @@ export const getFooterTC = () => (dispatch: Dispatch) => {
         adress.city,
         adress.mobile,
         adress.email,
-        adress.paypalme
+        adress.paypalme,
+        adress.text
       )
     );
     dispatch(appChangeStatus('done'));
@@ -61,4 +64,5 @@ const initialState: adressType = {
   mobile: '',
   email: '',
   paypalme: '',
+  text: '',
 };
