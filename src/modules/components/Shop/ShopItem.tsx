@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { adressType, ShopType } from '../../../api/api';
 import { AppRootStateType } from '../../../store/store';
+import noImage from '../../common/image/no-image.jpg';
 
 export const ShopItem = (props: ShopItemType) => {
   const contact = useSelector<AppRootStateType, adressType>(state => state.footer);
@@ -17,7 +18,12 @@ export const ShopItem = (props: ShopItemType) => {
         </div>
 
         <ul className="plan__info">
-          <img className="plan__list_image" src={props.shop.image} alt="shop" />
+          <img
+            className="plan__list_image"
+            src={props.shop.image ? props.shop.image : noImage}
+            alt="shop"
+          />
+
           <li className="plan__list">{props.shop.subtitle}</li>
           <li className="plan__list">
             Pay {'&'} and Send Me Email:
