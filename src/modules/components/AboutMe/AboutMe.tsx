@@ -7,6 +7,7 @@ import { AppRootStateType } from '../../../store/store';
 import Fade from 'react-reveal/Fade';
 import { ProfileType } from '../../../store/profile-reducers';
 import ReactPlayer from 'react-player';
+import Footer from '../Footer/Footer';
 
 export default function AboutMe() {
   const profile = useSelector<AppRootStateType, ProfileType>(state => state.profile);
@@ -24,6 +25,7 @@ export default function AboutMe() {
               <ReactPlayer url={profile.video} />
             </div>
           )}
+          <Footer />
         </Fade>
       </div>
     </div>

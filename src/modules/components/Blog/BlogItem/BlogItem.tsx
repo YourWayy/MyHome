@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BlogType } from '../../../../store/blog-reducers';
 import { BlogPopUp } from '../BlogPopUp/BlogPopUp';
+import space from '../../../common/image/space2.jpg';
 
 export const srtingLenghtCutter = (value: string | number) => {
   if (value && typeof value === 'string') {
@@ -36,7 +37,12 @@ export const BlogItem = (props: BlogsPropsType) => {
           ''
         )}
 
-        <img src={props.blog.image} alt="seo" className="blog__img" />
+        {props.blog.image ? (
+          <img src={props.blog.image} alt="seo" className="blog__img" />
+        ) : (
+          <img src={space} alt="seo" className="blog__img" />
+        )}
+
         <div className="blog__calender">
           <div className="blog__link" onClick={onBlogPopUpHandler}>
             {props.blog.title}

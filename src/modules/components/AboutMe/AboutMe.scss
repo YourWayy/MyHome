@@ -15,7 +15,8 @@
   &__container {
     display: flex;
     flex-direction: column;
-    min-height: 60vh;
+    justify-content: space-around;
+    min-height: 100vh;
     padding: 80px 0 0 0;
   }
   &__list {
