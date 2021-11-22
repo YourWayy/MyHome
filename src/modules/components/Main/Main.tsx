@@ -8,6 +8,7 @@ import Fade from 'react-reveal/Fade';
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-tilt';
 import StarfieldAnimation from 'react-starfield-animation';
+import noImage from '../../common/image/no-image.jpg';
 
 export default function Main() {
   const profile = useSelector<AppRootStateType, ProfileType>(state => state.profile);
@@ -41,7 +42,12 @@ export default function Main() {
 
             <div className="main__wrapper__left">
               <Tilt className="Tilt" options={{ max: 20, speed: 4000 }}>
-                <input type="image" src={profile.image} alt="photo" className="main__photo" />
+                <input
+                  type="image"
+                  src={profile.image ? profile.image : noImage}
+                  alt="photo"
+                  className="main__photo"
+                />
               </Tilt>
             </div>
           </div>
