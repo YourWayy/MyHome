@@ -15,8 +15,6 @@ export const Impressum = () => {
     dispatch(getFooterTC());
   }, [dispatch]);
 
-  console.log(contact.text);
-
   return (
     <>
       <Header type={'impressum'} />
